@@ -17,13 +17,11 @@ function sumIntervals(intervals) {
                 pairs.push(interval);
             }
         }
-        else if(el[0] >= pairs[pairs.length -1][0]) {
-            
+        else if(el[0] >= pairs[pairs.length -1][0]) {         
             if(el[1] > pairs[pairs.length -1][1]) {
                 pairs[pairs.length -1][1] = el[1];
             }
         }
- 
     })
     return pairs.reduce((sum, curr) => {return sum += curr[1] - curr[0]}, 0) 
 }
