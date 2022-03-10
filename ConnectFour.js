@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/56882731514ec3ec3d000009
 function whoIsWinner(piecesPositionList){
    let board = createBoard(6, 7)
    let turns = turnsParser(piecesPositionList)
